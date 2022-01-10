@@ -1,27 +1,29 @@
 import java.util.*;
 import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.concurrent.*;
-import java.util.function.*;
-import java.util.regex.*;
-import java.util.stream.*;
-import static java.util.stream.Collectors.joining;
-import static java.util.stream.Collectors.toList;
 
-public class Main {
+import static java.lang.Math.pow;
 
-    public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-
-        int N = Integer.parseInt(bufferedReader.readLine().trim());
-        for (int i=1; i<11; i++){
-            System.out.printf("%d x %d = %d%n", N, i, multiplyByNumber(N,i));
+class Main{
+    public static void main(String []argh){
+        Scanner in = new Scanner(System.in);
+        int t=in.nextInt();
+        for(int i=0;i<t;i++){
+            int a = in.nextInt();
+            int b = in.nextInt();
+            int n = in.nextInt();
+            System.out.println(createSeq(a,b,n));
         }
-        bufferedReader.close();
+        in.close();
     }
-    public static int multiplyByNumber(int num, int i){
-        return num * i;
+
+    public static String createSeq(int a, int b, int n){
+        StringBuilder sb = new StringBuilder();
+        int cum = a;
+        for (int i=0; i<n; i++){
+            cum = (int) (cum + pow(2,i)*b);
+            sb.append(cum + " ");
+        }
+        return sb.toString();
     }
+
 }
