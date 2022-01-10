@@ -1,15 +1,27 @@
 import java.util.*;
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.concurrent.*;
+import java.util.function.*;
+import java.util.regex.*;
+import java.util.stream.*;
+import static java.util.stream.Collectors.joining;
+import static java.util.stream.Collectors.toList;
 
 public class Main {
 
-    public static void main(String[] args) {
-            Scanner sc=new Scanner(System.in);
-            String s1=sc.next();
-            int x=sc.nextInt();
-            //Complete this line
-            String template = "%-15s%03d%n";
-            System.out.printf(template, s1, x);
+    public static void main(String[] args) throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-
+        int N = Integer.parseInt(bufferedReader.readLine().trim());
+        for (int i=1; i<11; i++){
+            System.out.printf("%d x %d = %d%n", N, i, multiplyByNumber(N,i));
+        }
+        bufferedReader.close();
+    }
+    public static int multiplyByNumber(int num, int i){
+        return num * i;
     }
 }
