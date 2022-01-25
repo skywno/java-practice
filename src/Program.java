@@ -1,36 +1,35 @@
+import java.util.InputMismatchException;
 import java.util.function.BiFunction;
 import java.util.stream.IntStream;
 
 public class Program {
-    public static int[] arrayOfMultiples(int num, int length) {
-        int[] arr = new int[length];
-        for (int i=0; i < length; i++){
-            arr[i] = num * (i+1);
-        }
-        return arr;
+    public static double mean(int[] nums) {
+        double length = nums.length;
+        int sum = IntStream.of(nums).reduce(0, (int a, int b) -> a+b);
+        return Math.round((sum / length * 100)) / 100.0;
     }
 
-    public static int[] arrayOfMultiples2(int num, int length) {
-        //람다식과 자주 사용되는 함수형 인터페이스 BiFucntion을 이용해서 풀기
-        BiFunction<Integer, Integer, int[]> arrayOfMultiples = (Integer n, Integer l) -> {
-            int[] arr = new int[l];
-            for (int i=0; i < l; i++) {
-                arr[i] = n * (i + 1);
-            }
-            return arr;
-        };
-        return arrayOfMultiples.apply(num, length);
+    public static double mean2(int[] nums) {
+        double average = IntStream.of(nums).average().getAsDouble();
+        return Math.round(average * 100) / 100.0;
+    }
 
-	}
-    public static int[] arrayOfMultiples3(int num, int length) {
-        //메서드 참조를 이용해서 풀기
-        BiFunction<Integer, Integer, int[]> arrayOfMultiples = Program::arrayOfMultiples2;
-        return arrayOfMultiples.apply(num, length);
+    //source: https://edabit.com/challenge/c52kNwPuWo5kp9x4H
+    public static String flipEndChars(String s) {
+        if (s.length() < 2) return "Incompatible.";
+        else if (s.charAt(0) == s.charAt(s.length()-1)) return "Two's a pair.";
+        else return s.charAt(s.length() -1) + s.substring(1,s.length() - 1) + s.charAt(0);
 	}
 
-    public static int[] arrayOfMultiples4(int num, int length) {
-        return IntStream.rangeClosed(1, length)
-                .map( i -> num * i)
-                .toArray();
+    //source: https://edabit.com/challenge/gyfsGx7KrGLscxFrD
+    public static int calculator(int num1, char operator, int num2) {
+	    if (operator == '+') return num1 + num2;
+        else if (operator == '*') return num1 * num2;
+        else if (operator == '-') return num1 - num2;
+        else{
+            if (operator == '/' && num2 == 0) return 0;
+            return num1 / num2;
+        }
+
     }
 }

@@ -6,10 +6,15 @@ import static org.testng.Assert.*;
 public class ProgramTest {
 
     @Test
-    public void testArrayOfMultiples() {
-        int[] ans = Program.arrayOfMultiples(7,5);
-        Assert.assertEquals(ans, new int[]{7,14,21,28,35});
-        int[] ans2 = Program.arrayOfMultiples(12, 10);
-        Assert.assertEquals(ans2, new int[]{12, 24, 36, 48, 60, 72, 84, 96, 108, 120});
+    public void testMean() {
+        Assert.assertEquals(Program.mean2(new int[]{1, 0, 4, 5, 2, 4, 1, 2, 3, 3, 3}), 2.55);
     }
+
+    @Test
+    public void testString() {
+        String result = Program.flipEndChars("Cat, dog, and mouse.");
+        boolean comp = result.equals(".at, dog, and mouseC");
+        Assert.assertTrue(comp);
+    }
+
 }
