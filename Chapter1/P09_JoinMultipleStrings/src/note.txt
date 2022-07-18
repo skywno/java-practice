@@ -1,0 +1,4 @@
+I studied three ways to join Strings: Using StringBuilder, Collectors.joining, and StringJoiner.
+The fastest method was to use StringBuilder with for-loop; however, Collectors.joining reduces the lines of code.
+Collectors.joining uses StringBuilder internally.
+StringJoiner Uses String Array internally.

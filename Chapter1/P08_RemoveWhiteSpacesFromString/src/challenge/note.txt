@@ -1,0 +1,1 @@
+Among regular expression I used in the code, \s is the most efficient to remove white spaces.

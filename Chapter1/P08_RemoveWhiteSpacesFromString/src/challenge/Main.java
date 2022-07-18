@@ -1,3 +1,4 @@
+package challenge;
 
 import java.util.concurrent.TimeUnit;
 
@@ -13,13 +14,33 @@ public class Main {
 
         System.out.println("Input text: \n" + TEXT + "\n");
 
-        System.out.println("replaceAll() solution:");
+        System.out.println("replaceAll() solution with a regex = \\p{Space}:");
         long startTime = System.nanoTime();
 
-        String result = Strings.removeWhitespaces(TEXT);
+        String result = Strings.removeWhitespaces1(TEXT);
 
         displayExecutionTime(System.nanoTime() - startTime);
         System.out.println("String without blanks is: \n" + result);
+        // Execution time: 9871300 ns (9 ms)
+
+        System.out.println("replaceAll() solution with a regex = [ \\t\\n\r]}:");
+        startTime = System.nanoTime();
+
+        result = Strings.removeWhitespaces2(TEXT);
+
+        displayExecutionTime(System.nanoTime() - startTime);
+        System.out.println("String without blanks is: \n" + result);
+        //Execution time: 1690400 ns (1 ms)
+
+
+        System.out.println("replaceAll() solution with a regex = \\s}:");
+        startTime = System.nanoTime();
+
+        result = Strings.removeWhitespaces3(TEXT);
+
+        displayExecutionTime(System.nanoTime() - startTime);
+        System.out.println("String without blanks is: \n" + result);
+        //Execution time: 856600 ns (0 ms)
     }
 
     private static void displayExecutionTime(long time) {
