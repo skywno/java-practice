@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Chapter1.iml" filepath="$PROJECT_DIR$/.idea/Chapter1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/P01_countDuplicateCharacters/P01_countDuplicateCharacters.iml" filepath="$PROJECT_DIR$/P01_countDuplicateCharacters/P01_countDuplicateCharacters.iml" />
+      <module fileurl="file://$PROJECT_DIR$/P02_FirstNonRepeatedCharacter/P02_FirstNonRepeatedCharacter.iml" filepath="$PROJECT_DIR$/P02_FirstNonRepeatedCharacter/P02_FirstNonRepeatedCharacter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/P03_ReverseWords/P03_ReverseWords.iml" filepath="$PROJECT_DIR$/P03_ReverseWords/P03_ReverseWords.iml" />
+      <module fileurl="file://$PROJECT_DIR$/P04_ContainsOnlyDigits/P04_ContainsOnlyDigits.iml" filepath="$PROJECT_DIR$/P04_ContainsOnlyDigits/P04_ContainsOnlyDigits.iml" />
+      <module fileurl="file://$PROJECT_DIR$/P05_CountVowelsAndConsonants/P05_CountVowelsAndConsonants.iml" filepath="$PROJECT_DIR$/P05_CountVowelsAndConsonants/P05_CountVowelsAndConsonants.iml" />
+      <module fileurl="file://$PROJECT_DIR$/P06_CountOccurencesOfCharacter/P06_CountOccurencesOfCharacter.iml" filepath="$PROJECT_DIR$/P06_CountOccurencesOfCharacter/P06_CountOccurencesOfCharacter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/P07_ConvertStringToIntLongFloatDouble/P07_ConvertStringToIntLongFloatDouble.iml" filepath="$PROJECT_DIR$/P07_ConvertStringToIntLongFloatDouble/P07_ConvertStringToIntLongFloatDouble.iml" />
+    </modules>
+  </component>
+</project>
