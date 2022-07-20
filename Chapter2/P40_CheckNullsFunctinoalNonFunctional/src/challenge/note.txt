@@ -1,0 +1,4 @@
+Things learned from this exercise:
+1. Objects class contains useful methods suchas nonNull(), isNull(), and so on.
+2. Collectors that can be used for collect() contains toList() method.
+3. you can convert Stream<Integer> to IntStream with mapToInt(Integer::intValue).
