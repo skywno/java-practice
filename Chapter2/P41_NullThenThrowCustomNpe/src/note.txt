@@ -1,0 +1,2 @@
+Things learned from this exercise:
+You can use Objects.requireNonNull(T obj, String message) instead of if-clause to ensure that obj is not null.
