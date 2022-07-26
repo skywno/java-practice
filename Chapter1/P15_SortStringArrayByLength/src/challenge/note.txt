@@ -1,0 +1,5 @@
+Things I learned from this exercise:
+1. Comparator<T> is an functional interface with T being a type of objects that may be compared by this comparator.
+2. how to create and use a comparator with Comparator interface's static methods, such as:
+- Comparator<T> comparing(Function<? super T, ? super U> keyExtractor)
+- Comparator<T> comparingInt(ToIntFunction<? super T> keyExtractor)
