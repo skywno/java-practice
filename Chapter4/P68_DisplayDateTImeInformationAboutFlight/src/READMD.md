@@ -1,0 +1,2 @@
+# Displaying date-time information about a flight:
+Write a program that displays information about a scheduled flight time of 15 hours and 30 minutes. More precisely, a flight from Perth,Australia to Bucharest,Europe.
