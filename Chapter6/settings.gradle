@@ -1,0 +1,9 @@
+rootProject.name = 'Chapter6'
+include 'P133_CompareFilePaths'
+include 'P134_WalkingPaths'
+include 'P136_StreamAFile'
+include 'P137_SearchFilesInFileTree'
+include 'P138_ReadWriteTextFilesEfficiently'
+include 'P139_ReadWriteBinaryFilesEfficiently'
+include 'P140_SearchingBigFiles'
+
