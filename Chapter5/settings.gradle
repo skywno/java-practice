@@ -1,0 +1,6 @@
+rootProject.name = 'Chapter5'
+include 'P78_SimpleExample'
+include 'p79_VarPrimitiveTypes'
+include 'P95_VarInLambdas'
+include 'P99_SortArray'
+
